@@ -1,0 +1,20 @@
+name: this is my pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: print message
+        run: echo "hy my name is sharik"
+
+      - name: check user
+        run: whoami
+
+      - name: check storage
+        run: df -Th
