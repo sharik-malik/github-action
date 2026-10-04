@@ -3,7 +3,7 @@ name: this is my pipeline
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
